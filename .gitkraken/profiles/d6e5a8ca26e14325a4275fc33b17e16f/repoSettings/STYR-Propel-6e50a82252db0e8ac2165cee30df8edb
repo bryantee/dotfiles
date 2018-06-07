@@ -1,0 +1,18 @@
+{
+  "lastPrivateRepoPrompt": "Tue Dec 12 2017 15:28:59 GMT-0700 (MST)",
+  "remoteParents": {
+    "github": {
+      "StyrLabs": {
+        "STYR-Propel": {
+          "hostingServiceType": "github",
+          "owner": "StyrLabs",
+          "name": "STYR-Propel"
+        }
+      }
+    }
+  },
+  "templates": {
+    "useCommitTemplate": true,
+    "shouldRemoveComments": false
+  }
+}

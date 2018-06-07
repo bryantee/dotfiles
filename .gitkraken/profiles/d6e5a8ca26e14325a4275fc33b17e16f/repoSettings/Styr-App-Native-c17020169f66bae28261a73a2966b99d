@@ -1,0 +1,50 @@
+{
+  "lastPrivateRepoPrompt": "Mon Sep 25 2017 14:07:24 GMT-0700 (MST)",
+  "remoteParents": {
+    "github": {
+      "StyrLabs": {
+        "Styr-App-Native": {
+          "hostingServiceType": "github",
+          "owner": "StyrLabs",
+          "name": "Styr-App-Native"
+        }
+      }
+    }
+  },
+  "upstreamFrecencyMetadata": {
+    "origin": {
+      "timestamps": [
+        1506627990277,
+        1506989079167,
+        1508798136637,
+        1509034333650,
+        1509402652391,
+        1527092038290,
+        1528238487190,
+        1528325685232
+      ],
+      "total": 8
+    }
+  },
+  "hiddenRefs": [
+    "refs/remotes/origin/hdi-card"
+  ],
+  "collapsedSections": [
+    "REMOTE",
+    "STASHES",
+    "TAGS",
+    "SUBMODULES",
+    "LOCAL"
+  ],
+  "layout": {
+    "GraphPanel": {
+      "Tree": {
+        "width": 128
+      }
+    }
+  },
+  "templates": {
+    "useCommitTemplate": true,
+    "shouldRemoveComments": false
+  }
+}

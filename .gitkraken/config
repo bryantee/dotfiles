@@ -1,0 +1,51 @@
+{
+  "lastUpgradeScriptRun": "v3.6.2",
+  "ui": {
+    "wideLayout": true,
+    "spellcheck": true,
+    "showToolbarLabels": true
+  },
+  "appId": "8149453d12fde3c987f5ceb011360abe56307d17",
+  "windowSettings": {
+    "x": 0,
+    "y": 413,
+    "width": 1680,
+    "height": 1027,
+    "fullScreen": false,
+    "maximized": true
+  },
+  "registration": {
+    "email": "bryantee@gmail.com",
+    "name": "Bryan Swagerty",
+    "status": "activated",
+    "trialStatus": null,
+    "loginType": "github",
+    "providerToken": {
+      "access_token": "5e0cd868ee1085cbc965ea7a3ef32f5f970668cc",
+      "token_type": "bearer",
+      "scope": "admin:public_key,repo,user:email",
+      "expires_at": null
+    },
+    "date": "2017-09-25T20:54:25.175Z",
+    "EULA": {
+      "version": "1.5.0",
+      "status": "agree_verified"
+    }
+  },
+  "userId": "44681cde-f36c-439d-b85b-f3ea1ca07bc3",
+  "licensedFeatures": [
+    "pro"
+  ],
+  "hasSeenNewUserOnboarding": true,
+  "userFeatures": [
+    {
+      "betaFeaturesEnabled": false,
+      "name": "gitkraken"
+    },
+    {
+      "betaFeaturesEnabled": true,
+      "name": "glo"
+    }
+  ],
+  "plugins": {}
+}

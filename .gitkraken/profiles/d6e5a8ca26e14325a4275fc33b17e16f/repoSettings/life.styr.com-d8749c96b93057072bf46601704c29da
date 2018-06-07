@@ -1,0 +1,30 @@
+{
+  "lastPrivateRepoPrompt": "Wed Oct 04 2017 18:32:18 GMT-0700 (MST)",
+  "remoteParents": {
+    "github": {
+      "StyrLabs": {
+        "life": {
+          "styr": {
+            "com": {
+              "hostingServiceType": "github",
+              "owner": "StyrLabs",
+              "name": "life.styr.com"
+            }
+          }
+        }
+      }
+    }
+  },
+  "upstreamFrecencyMetadata": {
+    "origin": {
+      "timestamps": [
+        1507323568204
+      ],
+      "total": 1
+    }
+  },
+  "templates": {
+    "useCommitTemplate": true,
+    "shouldRemoveComments": false
+  }
+}
