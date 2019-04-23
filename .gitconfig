@@ -1,16 +1,40 @@
 [user]
 	email = bryantee@gmail.com
 	name = Bryan Swagerty
+	user = bryantee
 [credential]
 	helper = osxkeychain
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = diff-so-fancy --function-context | less -RFX
 	editor = code --wait
 [alias]
 	co = checkout
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	vv = branch -vv
+	log-my-week = !git log --author $(git config user.email) --since=1.week
+	log-my-month = !git log --author $(git config user.email) --since=4.week
+	log-week = log --since=1.week
+	branch-name = rev-parse --abbrev-ref HEAD
+	publish = !git push -u origin $(git branch-name)
+	cleanse = !git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -n 1 git branch -D
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[rebase]
+	autoStash = true
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
