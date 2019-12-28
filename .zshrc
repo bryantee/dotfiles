@@ -114,7 +114,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitDiff $(is_git_branch_dirty)
   iterm2_set_user_var humpDay $(is_it_wednesday)
-  iterm2_set_user_var gitDir $(getGitProjectDir)
+  iterm2_set_user_var gitDir $(showGitProject)
 }
 
 function is_git_branch_dirty {
@@ -122,19 +122,33 @@ function is_git_branch_dirty {
 }
 
 function is_it_wednesday {
-  if [[ $(date +%A) = "Wednesday" ]]
-    then
+  local date=$(date +%A)
+
+  if [[ "$date" = "Wednesday" ]] then
      echo "🐪" # Camel Prompt
-    else
+  elif [[ "$date" = "Tuesday" ]] then
+    echo "🌮🌮"
+  elif [[ "$date" = "Friday" ]] then
+    echo "🍕"
+  elif [[ "$date" = "Saturday" ]] then
+    echo "🛌"
+  else
     echo "🐙" # Inky Prompt
   fi
 }
 
-function getGitProjectDir {
-  git_name=basename $(git rev-parse --show-toplevel 2> /dev/null ) 2> /dev/null
-
-  echo $git_name
+function showGitProject {
+  if [[ $(git status 2> /dev/null) = "" ]] then
+    echo ""
+  else
+    echo "$(getGitProjectDir)"
+  fi
 }
+
+function getGitProjectDir {
+  basename $(git rev-parse --show-toplevel 2> /dev/null ) 2> /dev/null
+}
+# End iTerm functions
 
 # Java vm setup
 export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
