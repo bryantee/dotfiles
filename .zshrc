@@ -113,7 +113,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # iTerm functions
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitDiff $(is_git_branch_dirty)
-  iterm2_set_user_var humpDay $(is_it_wednesday)
+  iterm2_set_user_var dayOfWeekEmoji $(dayOfWeekEmoji)
   iterm2_set_user_var gitDir $(showGitProject)
 }
 
@@ -121,19 +121,25 @@ function is_git_branch_dirty {
   [[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]] && echo "⚡⚡"
 }
 
-function is_it_wednesday {
+function dayOfWeekEmoji {
   local date=$(date +%A)
 
-  if [[ "$date" = "Wednesday" ]] then
-     echo "🐪" # Camel Prompt
+  if [[ "$date" = "Monday" ]] then
+    echo "🐙"
   elif [[ "$date" = "Tuesday" ]] then
     echo "🌮🌮"
+  elif [[ "$date" = "Wednesday" ]] then
+     echo "🐪"
+  elif [[ "$date" = "Thursday" ]] then
+     echo "🐙"
   elif [[ "$date" = "Friday" ]] then
     echo "🍕"
   elif [[ "$date" = "Saturday" ]] then
     echo "🛌"
+  elif [[ "$date" = "Sunday" ]] then
+    echo "🛌"
   else
-    echo "🐙" # Inky Prompt
+    echo "🐙"
   fi
 }
 
