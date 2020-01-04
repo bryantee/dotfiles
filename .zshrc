@@ -97,12 +97,19 @@ source $ZSH/oh-my-zsh.sh
 # Editors
 EDITOR="code"
 REACT_EDITOR="webstorm"
+DOTFILES="$HOME/.dotfiles"
 
 # Aliases
-alias zshconfig="$EDITOR ~/.zshrc"
+alias zshconfig="$EDITOR $DOTFILES/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias ls="exa -lah --git"
-alias histof='function _histof(){ history | grep $1 }; _histof'
+alias work="cd $HOME/code/carvana"
+alias play="cd $HOME/code/personal"
+
+# Functions
+function histof() {
+  history | grep $1
+}
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
