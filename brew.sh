@@ -36,7 +36,7 @@ brew install node
 brew cask install lastpass
 
 # fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts 
 brew cask install font-fira-code
 
 # cleanup
