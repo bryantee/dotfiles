@@ -99,12 +99,15 @@ EDITOR="code"
 REACT_EDITOR="webstorm"
 DOTFILES="$HOME/.dotfiles"
 
+JOB='carvana'
+
 # Aliases
 alias zshconfig="$EDITOR $DOTFILES/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias ls="exa -lah --git"
-alias work="cd $HOME/code/carvana"
+alias work="cd $HOME/code/$JOB"
 alias play="cd $HOME/code/personal"
+alias freelance="cd $HOME/code/freelance"
 
 # Functions
 function histof() {
