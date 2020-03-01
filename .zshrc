@@ -177,3 +177,13 @@ alias java13='export JAVA_HOME=$JAVA_13_HOME'
 # default
 java11
  
+# Android development
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# iOS development
+alias simlist='xcrun simctl list devices'
+alias devicelist='instruments -s devices'
