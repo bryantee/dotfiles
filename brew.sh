@@ -18,6 +18,9 @@ brew install git
 brew install htop
 brew install vim
 brew install watch
+brew install exa
+brew install diff-so-fancy
+brew install node
 
 # zsh
 brew install zsh zsh-completions
@@ -31,13 +34,13 @@ brew cask install slack
 brew cask install visual-studio-code
 brew cask install webstorm
 brew cask install iterm2
-brew install diff-so-fancy
-brew install node
 brew cask install lastpass
 
 # fonts
 brew tap homebrew/cask-fonts 
 brew cask install font-fira-code
+brew cask install font-firacode-nerd-font
+brew cask install font-hack-nerd-font
 
 # cleanup
 brew cleanup
