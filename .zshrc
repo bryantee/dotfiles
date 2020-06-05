@@ -104,7 +104,7 @@ JOB='carvana'
 # Aliases
 alias zshconfig="$EDITOR $DOTFILES/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
-alias ls="exa -lah --git"
+alias ls="exa -lah --git --icons"
 alias work="cd $HOME/code/$JOB"
 alias play="cd $HOME/code/personal"
 alias freelance="cd $HOME/code/freelance"
@@ -168,11 +168,11 @@ function getGitProjectDir {
 
 # Java vm setup
 export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-export JAVA_13_HOME=$(/usr/libexec/java_home -v13)
+export JAVA_14_HOME=$(/usr/libexec/java_home -v14)
 
 # Easily switch between Java vms
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
-alias java13='export JAVA_HOME=$JAVA_13_HOME'
+alias java14='export JAVA_HOME=$JAVA_14_HOME'
 
 # default
 java11

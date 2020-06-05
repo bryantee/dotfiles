@@ -21,6 +21,7 @@ brew install watch
 brew install exa
 brew install diff-so-fancy
 brew install node
+brew install java11 java14
 
 # zsh
 brew install zsh zsh-completions
